@@ -3,10 +3,10 @@ using Microsoft.Extensions.Logging;
 using Moq;
 using Notepad.Business.Interfaces;
 using Notepad.Business.Service;
-using Notepad.Database.Custom;
-using Notepad.Database.Dto;
 using Notepad.Database.Interfaces;
 using Notepad.Database.Model;
+using Notepad.Shared.Custom;
+using Notepad.Shared.Dto;
 using System.Text;
 
 namespace Service_Unit_Test.Tests

@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using Notepad.Database.Data;
-using Notepad.Database.Dto;
 using Notepad.Database.Interfaces;
 using Notepad.Database.Model;
 using Notepad.Database.Repository;
+using Notepad.Shared.Dto;
 
 namespace Database_Unit_Test.Tests
 {

@@ -1,4 +1,4 @@
-﻿using Notepad.Database.Dto;
+﻿using Notepad.Shared.Dto;
 
 namespace Notepad.Business.Interfaces
 {

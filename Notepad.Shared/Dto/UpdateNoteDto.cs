@@ -1,26 +1,24 @@
 ﻿using Microsoft.AspNetCore.Http;
-using Notepad.Database.Attributes;
+using Notepad.Shared.Attributes;
 
-namespace Notepad.Database.Dto
+namespace Notepad.Shared.Dto
 {
-    public class NoteDto
+    public class UpdateNoteDto
     {
         public string Title { get; set; }
         public string Content { get; set; }
-        [AllowedExtension([".png", ".jpg"])]
+        [AllowedExtension(new string[] { ".png", ".jpg" })]
         [MaxFileSize(2 * 1024 * 1024)]
         public IFormFile Image { get; set; }
-        public List<string> Categories { get; set; }
 
-        public NoteDto()
+        public UpdateNoteDto()
         {
         }
 
-        public NoteDto(string title, string content, IFormFile image, List<string> categories)
+        public UpdateNoteDto(string title, string content, IFormFile image)
         {
             Title = title;
             Content = content;
-            Categories = categories;
             Image = image;
         }
     }

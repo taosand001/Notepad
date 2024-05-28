@@ -1,7 +1,7 @@
 ﻿using AutoFixture.Kernel;
 using Microsoft.AspNetCore.Http;
-using Notepad.Database.Dto;
 using Notepad.Database.Model;
+using Notepad.Shared.Dto;
 using System.Text;
 
 namespace ApI_Integration_Test.Specimen_Builder

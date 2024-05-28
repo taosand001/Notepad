@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service Unit Test", "Servic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApI Integration Test", "ApI Integration Test\ApI Integration Test.csproj", "{284EF728-1863-41BD-9D9A-A42CBB5B08F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notepad.Shared", "Notepad.Shared\Notepad.Shared.csproj", "{EB6D7C05-8846-4D3A-9456-A79AA5B5DFD8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{284EF728-1863-41BD-9D9A-A42CBB5B08F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{284EF728-1863-41BD-9D9A-A42CBB5B08F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{284EF728-1863-41BD-9D9A-A42CBB5B08F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB6D7C05-8846-4D3A-9456-A79AA5B5DFD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB6D7C05-8846-4D3A-9456-A79AA5B5DFD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB6D7C05-8846-4D3A-9456-A79AA5B5DFD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB6D7C05-8846-4D3A-9456-A79AA5B5DFD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

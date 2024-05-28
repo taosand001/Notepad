@@ -22,6 +22,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Notepad.Business\Notepad.Business.csproj" />
     <ProjectReference Include="..\Notepad.Database\Notepad.Database.csproj" />
+    <ProjectReference Include="..\Notepad.Shared\Notepad.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>

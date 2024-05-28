@@ -1,5 +1,5 @@
-﻿using Notepad.Database.Dto;
-using Notepad.Database.Model;
+﻿using Notepad.Database.Model;
+using Notepad.Shared.Dto;
 
 namespace Notepad.Business.Interfaces
 {

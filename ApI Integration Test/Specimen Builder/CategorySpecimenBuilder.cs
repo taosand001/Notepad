@@ -1,6 +1,6 @@
 ﻿using AutoFixture.Kernel;
-using Notepad.Database.Dto;
 using Notepad.Database.Model;
+using Notepad.Shared.Dto;
 
 namespace ApI_Integration_Test.Specimen_Builder
 {

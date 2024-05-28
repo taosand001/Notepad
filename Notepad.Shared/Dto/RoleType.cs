@@ -1,4 +1,4 @@
-﻿namespace Notepad.Database.Dto
+﻿namespace Notepad.Shared.Dto
 {
     public enum RoleType
     {

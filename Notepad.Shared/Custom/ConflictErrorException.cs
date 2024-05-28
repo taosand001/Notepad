@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace Notepad.Database.Custom
+namespace Notepad.Shared.Custom
 {
     [Serializable]
     public class ConflictErrorException : Exception

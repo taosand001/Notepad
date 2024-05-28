@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Notepad.Business.Interfaces;
-using Notepad.Database.Custom;
-using Notepad.Database.Dto;
 using Notepad.Database.Model;
+using Notepad.Shared.Custom;
+using Notepad.Shared.Dto;
 
 namespace Notepad.Api.Controllers
 {

@@ -1,42 +1,39 @@
 ﻿using Microsoft.AspNetCore.Http;
 using System.ComponentModel.DataAnnotations;
 
-namespace Notepad.Database.Attributes
+namespace Notepad.Shared.Attributes
 {
-    public class AllowedExtensionAttribute : ValidationAttribute
+    public class MaxFileSizeAttribute : ValidationAttribute
     {
-        private readonly string[] _extensions;
+        private readonly int _maxFileSize;
 
-        public AllowedExtensionAttribute(string[] extensions)
+        public MaxFileSizeAttribute(int maxFileSize)
         {
-            _extensions = extensions;
+            _maxFileSize = maxFileSize;
         }
 
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
             if (value is IFormFile file)
             {
-                var extension = Path.GetExtension(file.FileName);
-                if (!_extensions.Contains(extension.ToLower()))
+                if (file.Length > _maxFileSize)
                 {
                     return new ValidationResult(GetErrorMessage());
                 }
             }
-            else if (value is string path)
+            else if (value is long)
             {
-                var extension = Path.GetExtension(path);
-                if (!_extensions.Contains(extension.ToLower()))
+                if ((long)value > _maxFileSize)
                 {
                     return new ValidationResult(GetErrorMessage());
                 }
             }
-
             return ValidationResult.Success!;
         }
 
         public string GetErrorMessage()
         {
-            return $"Allowed extensions are {string.Join(", ", _extensions)}";
+            return $"Maximum allowed file size is {_maxFileSize} bytes.";
         }
     }
 }

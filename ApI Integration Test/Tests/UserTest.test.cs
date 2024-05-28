@@ -2,8 +2,8 @@
 using Moq;
 using Notepad.Api.Controllers;
 using Notepad.Business.Interfaces;
-using Notepad.Database.Custom;
-using Notepad.Database.Dto;
+using Notepad.Shared.Custom;
+using Notepad.Shared.Dto;
 
 namespace ApI_Integration_Test.Tests
 {

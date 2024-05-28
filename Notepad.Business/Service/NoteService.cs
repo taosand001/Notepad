@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Notepad.Business.Interfaces;
-using Notepad.Database.Custom;
-using Notepad.Database.Dto;
 using Notepad.Database.Interfaces;
 using Notepad.Database.Model;
+using Notepad.Shared.Custom;
+using Notepad.Shared.Dto;
 
 namespace Notepad.Business.Service
 {

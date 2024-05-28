@@ -1,4 +1,4 @@
-﻿namespace Notepad.Database.Custom
+﻿namespace Notepad.Shared.Custom
 {
     public class NotFoundErrorException : Exception
     {
